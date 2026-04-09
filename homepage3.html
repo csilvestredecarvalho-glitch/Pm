@@ -2,170 +2,66 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Apresentação pessoal</title>
+<title>Hobbies</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-
 body{
-background: #0a0a0a;
-color:white;
-}
-
-
-nav{
-background:#111;
-padding:15px;
-display:flex;
-justify-content:center;
-gap:30px;
-position:sticky;
-top:0;
-border-bottom:1px solid #222;
-}
-
-nav a{
-color:#ccc;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00e5ff;
-}
-
-
-.container{
-width:85%;
-max-width:900px;
-margin:40px auto;
-text-align:center;
-}
-
-
-.foto{
-width:150px;
-border-radius:50%;
-margin-bottom:20px;
-border:3px solid #00e5ff;
-}
-
-
-.card{
-background:#111;
-padding:20px;
-border-radius:15px;
-margin:20px 0;
-border:1px solid #222;
-transition:.3s;
-}
-
-.card:hover{
-transform:scale(1.02);
+    background:#0a0a0a;
+    color:#00e5ff;
+    font-family: Arial, sans-serif;
+    text-align:center;
 }
 
 
 h1{
-margin-bottom:10px;
-}
-
-h2{
-margin-bottom:15px;
-color:#00e5ff;
+    margin-top:40px;
 }
 
 
-.botao{
-display:inline-block;
-margin:8px;
-padding:10px 25px;
-background:#00e5ff;
-color:black;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
+.container{
+    margin:30px auto;
+    padding:20px;
+    width:60%;
+    border:1px solid #00e5ff;
+    border-radius:10px;
 }
 
-.botao:hover{
-background:#00bcd4;
+
+p{
+    font-size:18px;
+    margin:10px;
 }
 
-.logo{
-width:200px;
-margin-bottom:45px;
+
+a{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 20px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:6px;
 }
+
 </style>
 </head>
 
 <body>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Sobre</a>
-<a href="#">Ensino Médio</a>
-<a href="#">Contato</a>
-</nav>
+<h1> Hobbies</h1>
 
 <div class="container">
 
-<h1>Caio Silvestre De Carvalho</h1>
-
-
-
-<div class="card">
-<p><b>E-mail:</b> csilvestredecarvalho@gmail.com </p>
-<p><b>Telefone:</b> 12 987033225 </p>
-<p><b>Onde moro:</b> São José Dos Campos </p>
-<p><b>Ano de nascimento:</b> 07/06/2008 </p>
-<p><b>Rede de ensino:</b> José Vieira Macedo </p>
-
-
+<p>💪 Calistenia</p>
+<p>⚽ Futebol</p>
+<p>📊 Gosto de matemática</p>
+<p>🎧 Escuto música</p>
+<p>🎬 Filmes de guerra</p>
 
 </div>
 
-<div class="card">
-<h2>Vida Academica</h2>
-
-<a class="botao" href="hobbies.html">hobbies</a>
-<a class="botao" href="objetivos.html">objetivos</a>
-<a class="botao" href="vidaacademica.html">vida academica</a>
-<a class="botao" href="2ano.html">2º Ano</a>
-<a class="botao" href="3ano.html">3º Ano</a>
-<a class="botao" href="estudos.html">estudos</a>
-
-</div>
-
-</div>
-
-<script>
-
-function calcularIdade(){
-let nascimento = new Date(2008,5,7)
-let hoje = new Date()
-
-let idade = hoje.getFullYear() - nascimento.getFullYear()
-let m = hoje.getMonth() - nascimento.getMonth()
-
-if(m < 0 || (m === 0 && hoje.getDate() < nascimento.getDate())){
-idade--
-}
-
-document.getElementById("idade").innerHTML =
-"<h2>Idade: " + idade + " anos</h2>"
-}
-
-calcularIdade()
-
-</script>
+<a href="homepage3.html">Voltar</a>
 
 </body>
 </html>
