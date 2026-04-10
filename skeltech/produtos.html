@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loja de Produtos</title>
+
+<style>
+body{
+background:#0a0a0a;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+margin:0;
+}
+
+h1{
+margin-top:30px;
+color:#00e5ff;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#111;
+border-radius:15px;
+padding:15px;
+width:220px;
+box-shadow:0 0 10px #000;
+transition:0.3s;
+text-align:left;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+border-radius:15px;
+}
+
+.preco{
+color:#00e5ff;
+font-size:18px;
+margin:10px 0;
+}
+
+.botao{
+display:inline-block;
+padding:10px;
+background:#00e5ff;
+color:black;
+text-decoration:none;
+border-radius:8px;
+margin-top:10px;
+}
+
+.botao:hover{
+background:#00bcd4;
+}
+
+/* DESCRIÇÃO ESTILIZADA */
+.descricao{
+font-size:13px;
+color:#bbb;
+margin-top:10px;
+line-height:1.6;
+padding-left:0;
+list-style:none;
+}
+
+.descricao li::before{
+content:"✔ ";
+color:#00e5ff;
+}
+
+/* FOOTER */
+footer{
+margin-top:30px;
+padding:20px;
+background:#111;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🛒 Loja de Tecnologia</h1>
+
+<div class="container">
+
+<div class="card">
+<img src="painelsolar.jpg">
+<h3>Painel Solar</h3>
+<p class="preco">R$150,00</p>
+<p>8x sem juros</p>
+<ul class="descricao">
+<li>Produto novo</li>
+<li>Nota fiscal inclusa</li>
+<li>Garantia de 2 anos</li>
+<li>Vida útil de até 25 anos</li>
+</ul>
+<a href="#" class="botao">Comprar</a>
+</div>
+
+<div class="card">
+<img src="pcgamer.jpg">
+<h3>PC Gamer</h3>
+<p class="preco">R$3500,00</p>
+<p>12x sem juros</p>
+<ul class="descricao">
+<li>Produto novo</li>
+<li>Nota fiscal inclusa</li>
+<li>Garantia de 1 ano</li>
+<li>Alto desempenho para jogos</li>
+</ul>
+<a href="#" class="botao">Comprar</a>
+</div>
+
+<div class="card">
+<img src="celular.jpg">
+<h3>Celular</h3>
+<p class="preco">R$10000,00</p>
+<p>18x sem juros</p>
+<ul class="descricao">
+<li>Produto novo</li>
+<li>Nota fiscal inclusa</li>
+<li>Garantia de 1 ano</li>
+<li>Atualizações garantidas</li>
+</ul>
+<a href="#" class="botao">Comprar</a>
+</div>
+
+<div class="card">
+<img src="carro.jpg">
+<h3>Carro Elétrico</h3>
+<p class="preco">R$76000,00</p>
+<ul class="descricao">
+<li>Produto novo</li>
+<li>Nota fiscal inclusa</li>
+<li>Garantia de 3 anos</li>
+<li>Bateria de longa duração</li>
+</ul>
+<a href="#" class="botao">Comprar</a>
+</div>
+
+<div class="card">
+<img src="bicicleta.jpg">
+<h3>Bicicleta Elétrica</h3>
+<p class="preco">R$18000,00</p>
+<p>23x sem juros</p>
+<ul class="descricao">
+<li>Produto novo</li>
+<li>Nota fiscal inclusa</li>
+<li>Garantia de 1 ano</li>
+<li>Ideal para mobilidade urbana</li>
+</ul>
+<a href="#" class="botao">Comprar</a>
+</div>
+
+</div>
+
+<footer>
+<h2>Qualidade e Garantia</h2>
+<p>✔ Produtos novos com 2 anos de garantia</p>
+<p>✔ Entregamos em todo o Brasil</p>
+<p>✔ Suporte completo</p>
+<p>✔ Aceitamos Pix, cartão, dinheiro</p>
+
+<p><b>Contato:</b> 12 98883-1527</p>
+</footer>
+
+</body>
+</html>
